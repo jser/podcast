@@ -1,0 +1,77 @@
+{
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "name": "podcast",
+  "version": "1.0.0",
+  "description": "JSer.info podcast creator",
+  "main": "lib/index.js",
+  "workspace": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "mocha 'test/**/*.ts'",
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css}'",
+    "precommit": "lint-staged",
+    "postcommit": "git reset",
+    "build": "cross-env NODE_ENV=production tsc -p .",
+    "watch": "tsc -p . --watch",
+    "prepublish": "npm run --if-present build"
+  },
+  "keywords": [
+    "amazon",
+    "polly",
+    "jser"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jser/podcast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jser/podcast/issues"
+  },
+  "homepage": "https://github.com/jser/podcast",
+  "devDependencies": {
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^8.0.46",
+    "cross-env": "^5.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "mocha": "^4.0.1",
+    "prettier": "^1.7.4",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 4
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "types": "lib/podcast.d.ts",
+  "dependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/glob": "^5.0.33",
+    "audioconcat": "^0.1.3",
+    "aws-sdk": "^2.138.0",
+    "glob": "^7.1.2",
+    "mdast-util-to-string": "^1.0.4",
+    "mp3cat-bin": "^3.0.1",
+    "remark": "^8.0.0",
+    "ssml-builder": "^0.4.0",
+    "unist-util-visit-parents": "^1.1.1",
+    "xml-escape": "^1.1.0"
+  }
+}
