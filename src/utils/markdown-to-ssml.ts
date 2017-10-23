@@ -42,7 +42,14 @@ export interface markdownToSSMLOptions {
     breakTimeAfterParagraph: number; // 1000
 }
 
-export function markdownToSSML(content: string, options: markdownToSSMLOptions): string {
+export const DefaultMarkdownToSSMLOptions = {
+    // mill second
+    breakTimeAroundHeader: 2000, // 2000
+    // mill second
+    breakTimeAfterParagraph: 1000 // 1000
+};
+
+export function markdownToSSML(content: string, options: markdownToSSMLOptions = DefaultMarkdownToSSMLOptions): string {
     const AST = remark.parse(content);
     let text = "";
     visit(AST, "text", (node: RemarkNode, parents: RemarkNode[]) => {

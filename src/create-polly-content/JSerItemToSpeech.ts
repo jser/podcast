@@ -1,5 +1,5 @@
 // MIT © 2017 azu
-import { markdownToSSML, SSML } from "./markdown-to-ssml";
+import { markdownToSSML, SSML } from "../utils/markdown-to-ssml";
 
 export interface JSerItem {
     category: string;
@@ -10,7 +10,14 @@ export interface JSerItem {
     relatedLinks: { title: string; url: string }[];
 }
 
-export function convertToSpeech(item: JSerItem): string {
+export function convertMarkdownToSSMLSpeak(markdownContent: string): string {
+    return `<speak>${markdownToSSML(markdownContent, {
+        breakTimeAroundHeader: 2000,
+        breakTimeAfterParagraph: 1000
+    })}</speak>`;
+}
+
+export function convertItemToSSML(item: JSerItem): string {
     const title = SSML(speech => {
         speech.emphasis("moderate", item.title);
         speech.pause(`2000ms`);
@@ -19,8 +26,7 @@ export function convertToSpeech(item: JSerItem): string {
         breakTimeAroundHeader: 2000,
         breakTimeAfterParagraph: 1000
     });
-    return `<speak>
-${title}
+    return `<speak>${title}
 ${content}
 </speak>`;
 }

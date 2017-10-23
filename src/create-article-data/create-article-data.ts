@@ -10,9 +10,18 @@
  * をまとめたデータを作って返す
  */
 import { JSerStat, DefaultData } from "jser-stat";
-import { parse } from "jser-item-category-parser";
+import { parse, ParseResult } from "jser-item-category-parser";
 import * as path from "path";
 import * as fs from "fs";
+
+export interface PodcastArticle {
+    weekNumber: number;
+    title: string;
+    date: Date;
+    url: string;
+    content: string;
+    items: ParseResult[];
+}
 
 export function createArticleData(filePath: string) {
     const fileName = path.basename(filePath, ".md");
@@ -30,10 +39,13 @@ export function createArticleData(filePath: string) {
         throw new Error("not found article");
     }
     const content = fs.readFileSync(filePath, "utf-8");
+    const items: ParseResult[] = parse(content);
     return {
         weekNumber: jserWeek.weekNumber,
-        url: jserWeek.post.url,
         title: jserWeek.post.title,
-        items: parse(content)
+        date: jserWeek.post.date,
+        url: jserWeek.post.url,
+        content,
+        items: items
     };
 }

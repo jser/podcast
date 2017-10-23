@@ -8,12 +8,26 @@
   dependencies:
     aws-sdk "*"
 
+"@types/debug@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@types/debug/-/debug-0.0.30.tgz#dc1e40f7af3b9c815013a7860e6252f6352a84df"
+
 "@types/glob@^5.0.33":
   version "5.0.33"
   resolved "https://registry.yarnpkg.com/@types/glob/-/glob-5.0.33.tgz#3dff7c6ce09d65abe919c7961dc3dee016f36ad7"
   dependencies:
     "@types/minimatch" "*"
     "@types/node" "*"
+
+"@types/lodash.groupby@^4.6.3":
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/@types/lodash.groupby/-/lodash.groupby-4.6.3.tgz#2e32fe28b4c717864a372ccc42cafdd9b076e08e"
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash@*":
+  version "4.14.78"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.78.tgz#f26a0b38a44a832c652964803c7e48be05939d3f"
 
 "@types/minimatch@*":
   version "3.0.1"
@@ -22,6 +36,12 @@
 "@types/mocha@^2.2.43":
   version "2.2.43"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-2.2.43.tgz#03c54589c43ad048cbcbfd63999b55d0424eec27"
+
+"@types/moment@^2.13.0":
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/@types/moment/-/moment-2.13.0.tgz#604ebd189bc3bc34a1548689404e61a2a4aac896"
+  dependencies:
+    moment "*"
 
 "@types/node@*", "@types/node@^8.0.46":
   version "8.0.46"
@@ -1567,9 +1587,9 @@ jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
 
-jser-item-category-parser@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/jser-item-category-parser/-/jser-item-category-parser-1.3.0.tgz#8ec69314ab1a8b5b63efc0fc279cd953744a8d02"
+jser-item-category-parser@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/jser-item-category-parser/-/jser-item-category-parser-1.3.2.tgz#10924ee606c612cb43774de4f47eafed60f45910"
   dependencies:
     debug "^3.1.0"
     execall "^1.0.0"
@@ -1783,6 +1803,10 @@ lodash.difference@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.difference/-/lodash.difference-4.5.0.tgz#9ccb4e505d486b91651345772885a2df27fd017c"
 
+lodash.groupby@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.groupby/-/lodash.groupby-4.6.0.tgz#0b08a1dcf68397c397855c3239783832df7403d1"
+
 lodash.isarguments@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
@@ -1968,6 +1992,12 @@ mailgun-js@^0.7.0:
     q "~1.4.0"
     tsscmp "~1.0.0"
 
+make-dir@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-1.1.0.tgz#19b4369fe48c116f53c2af95ad102c0e39e85d51"
+  dependencies:
+    pify "^3.0.0"
+
 make-error@^1.1.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.0.tgz#52ad3a339ccf10ce62b4040b708fe707244b8b96"
@@ -2080,6 +2110,10 @@ mocha@^4.0.1:
     he "1.1.1"
     mkdirp "0.5.1"
     supports-color "4.4.0"
+
+moment@*, moment@^2.19.1:
+  version "2.19.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.19.1.tgz#56da1a2d1cbf01d38b7e1afc31c10bcfa1929167"
 
 mp3cat-bin@^3.0.1:
   version "3.0.1"
@@ -2396,6 +2430,10 @@ performance-now@^2.1.0:
 pify@^2.0.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
+
+pify@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
 
 pinkie-promise@^2.0.0:
   version "2.0.1"

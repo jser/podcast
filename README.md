@@ -10,13 +10,23 @@ Install with [npm](https://www.npmjs.com/):
 
 ## Usage
 
-### Create Article data
+### Create `PodcastArticle`
 
 - Article URL
 - Article Items
 - JSer.info number
 
-### Convert Article data to mp3 files via Amazon Polly
+### Filer?
+
+- [ ] Amazon ISBN
+
+### Create Polly List
+
+- Draft polly content
+
+### Write Polly Index
+
+### Convert Polly index to mp3 files via Amazon Polly
 
 ### Concat mp3 files to a single files
 
