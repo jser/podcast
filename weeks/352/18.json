@@ -1,0 +1,7 @@
+{
+    "text": "自分のライブラリがアップデートすることで、そのライブラリユーザーのパッケージが壊れないかをチェックできるツール。 壊れないかをチェックするライブラリを`.dont-break.json`に記述してテストできる。",
+    "ssml": "<speak><emphasis level='moderate'>bahmutov/dont-break: Checks if the current version of your package would break dependent projects</emphasis> <break time='2000ms'/>\n自分のライブラリがアップデートすることで、そのライブラリユーザーのパッケージが壊れないかをチェックできるツール。 壊れないかをチェックするライブラリをに記述してテストできる。\n</speak>",
+    "key": "18",
+    "fileName": "18",
+    "type": "item"
+}

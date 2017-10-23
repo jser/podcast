@@ -1,0 +1,7 @@
+{
+    "text": "Mocha 4.0.0リリース。\nNode.js 0.1xなどのサポート終了、IE8/PhantomJS 1.xのサポート終了、`--no-exit`がデフォルトの動作になるなど",
+    "ssml": "<speak><emphasis level='moderate'>Release v4.0.0 · mochajs/mocha</emphasis> <break time='2000ms'/>\nMocha 4.0.0リリース。\nNode.js 0.1xなどのサポート終了、IE8/PhantomJS 1.xのサポート終了、がデフォルトの動作になるなど\n</speak>",
+    "key": "2",
+    "fileName": "2",
+    "type": "item"
+}

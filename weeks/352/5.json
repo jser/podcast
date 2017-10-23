@@ -1,0 +1,7 @@
+{
+    "text": "npm 5.5.0で2要素認証のサポート。\nまたRead-only tokenを発行できるようになった。",
+    "ssml": "<speak><emphasis level='moderate'>The npm Blog — Protect your npm account with two-factor...</emphasis> <break time='2000ms'/>\nnpm 5.5.0で2要素認証のサポート。\nまたRead-only tokenを発行できるようになった。\n</speak>",
+    "key": "5",
+    "fileName": "5",
+    "type": "item"
+}

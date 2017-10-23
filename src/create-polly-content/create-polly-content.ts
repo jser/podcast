@@ -31,17 +31,17 @@ export const getCategoryName = (categoryKey: keyof typeof Category): string => {
 export function createPollyContent(article: PodcastArticle): PollyContentList {
     const dateString = moment(article.date).format("YYYY年MM月DD日");
     const titleCallText = `
-<speak>${dateString}の<sub alias="ジェイエスアーインフォ">JSer.info</sub></speak>
+<speak>${dateString}の<sub alias="ジェイエスアーインフォ">JSer.info</sub><break time="2s"/></speak>
 `.trim();
-    const items: PollyContentItem[] = [
-        {
-            text: `${dateString}のJSer.info`,
-            ssml: titleCallText,
-            key: "title",
-            fileName: "0.title",
-            type: "decoration"
-        }
-    ];
+    const opening: PollyContentItem = {
+        text: `${dateString}のJSer.info`,
+        ssml: titleCallText,
+        key: "title",
+        fileName: "0.title",
+        type: "decoration"
+    };
+
+    const items: PollyContentItem[] = [opening];
     const itemsByCategory = groupBy(article.items, "category");
     Object.keys(itemsByCategory).forEach((categoryKey: keyof typeof Category) => {
         const cateryName = getCategoryName(categoryKey);
@@ -63,7 +63,13 @@ export function createPollyContent(article: PodcastArticle): PollyContentList {
             });
         });
     });
-
+    items.push({
+        text: `${article.weekNumber}回目のJSer.infoは以上です。詳しくは https://jser.info/ を見てください。`,
+        ssml: `<speak><break time="2s"/>${article.weekNumber}回目の<sub alias="ジェイエスアーインフォ">JSer.info</sub>は以上です。詳しくは https://jser.info/ を見てください。</speak>`,
+        key: "ending",
+        fileName: `${items.length}.ending`,
+        type: "decoration"
+    });
     return {
         weekNumber: article.weekNumber,
         title: article.title,

@@ -6,12 +6,15 @@ import { PollyContentItem } from "../create-polly-content/create-polly-content";
 
 const execFile = require("child_process").execFile;
 const mp3cat = require("mp3cat-bin");
+const makeDir = require("make-dir");
 
-export function concatAudios(directory: string, outputPath: string) {
-    const absoluteDir = path.resolve(process.cwd(), directory);
-    const absoluteOutputDir = path.resolve(process.cwd(), outputPath);
+export function concatAudios(inputDirectory: string, outputPath: string) {
+    const absoluteInputDir = path.resolve(process.cwd(), inputDirectory);
+    const absoluteOutputPath = path.resolve(process.cwd(), outputPath);
+    const absoluteOutputDir = path.dirname(absoluteOutputPath);
+    makeDir.sync(absoluteOutputDir);
     const spaceNextAudio = path.resolve(path.join(__dirname, "../../resources/next-item.mp3"));
-    const files = glob.sync(`${absoluteDir}/*.mp3`);
+    const files = glob.sync(`${absoluteInputDir}/*.mp3`);
     // sort by number 1,2,3.....
     const collator = new Intl.Collator("ja", { numeric: true });
     const sortedFiles = files.sort(collator.compare).map(filePath => {
@@ -37,11 +40,15 @@ export function concatAudios(directory: string, outputPath: string) {
     });
     return new Promise((resolve, reject) => {
         // concat
-        execFile(mp3cat, allMp3FilePathList.concat(["--out", absoluteOutputDir]), (err: any, stdout: any) => {
-            if (err) {
-                return reject(err);
+        execFile(
+            mp3cat,
+            allMp3FilePathList.concat(["--force", "--out", absoluteOutputPath]),
+            (err: any, stdout: any) => {
+                if (err) {
+                    return reject(err);
+                }
+                resolve(stdout);
             }
-            resolve(stdout);
-        });
+        );
     });
 }

@@ -1,0 +1,7 @@
+{
+    "text": "LyftにおいてJavaScriptで書かれたものをTypeScriptにマイグレーションするまでの話。\nFlowとTypeScriptどちらもJavaScriptとは異なる言語という認識での比較やJavaScriptで書かれたReactコンポーネントのマイグレーションなどについて",
+    "ssml": "<speak><emphasis level='moderate'>TypeScript at Lyft – Lyft Engineering</emphasis> <break time='2000ms'/>\nLyftにおいてJavaScriptで書かれたものをTypeScriptにマイグレーションするまでの話。\nFlowとTypeScriptどちらもJavaScriptとは異なる言語という認識での比較やJavaScriptで書かれたReactコンポーネントのマイグレーションなどについて\n</speak>",
+    "key": "11",
+    "fileName": "11",
+    "type": "item"
+}

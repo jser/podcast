@@ -1,0 +1,7 @@
+{
+    "text": "pipe operator(`|>`)の代案として書かれたライブラリ",
+    "ssml": "<speak><emphasis level='moderate'>egeozcan/ppipe: pipes values through functions, an alternative to using the proposed pipe operator ( | ) for ES</emphasis> <break time='2000ms'/>\npipe operator()の代案として書かれたライブラリ\n</speak>",
+    "key": "20",
+    "fileName": "20",
+    "type": "item"
+}

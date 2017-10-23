@@ -1,0 +1,7 @@
+{
+    "text": "Safari Technology Preview Release 41リリース。\nCSSの`calc()`内で`min()`と`max()`をサポート、`env()`を`constant()`のaliasとして追加、`DataTransfer.prototype.items`をデフォルトで有効化など",
+    "ssml": "<speak><emphasis level='moderate'>Release Notes for Safari Technology Preview 41 | WebKit</emphasis> <break time='2000ms'/>\nSafari Technology Preview Release 41リリース。\nCSSの内でとをサポート、をのaliasとして追加、をデフォルトで有効化など\n</speak>",
+    "key": "6",
+    "fileName": "6",
+    "type": "item"
+}

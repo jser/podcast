@@ -1,0 +1,7 @@
+{
+    "text": "WHATWG Streamについての記事。\nStream処理の利点や基本的なWHATWG Streamのread/write/pipeのやり方やbackpressureについて。\nFetch APIとの組み合わせ、Dojoによる互換実装、ブラウザの実装状況についてなど",
+    "ssml": "<speak><emphasis level='moderate'>A Guide to Faster Web App I/O and Data Operations with Streams - Blog | SitePen</emphasis> <break time='2000ms'/>\nWHATWG Streamについての記事。\nStream処理の利点や基本的なWHATWG Streamのread/write/pipeのやり方やbackpressureについて。\nFetch APIとの組み合わせ、Dojoによる互換実装、ブラウザの実装状況についてなど\n</speak>",
+    "key": "13",
+    "fileName": "13",
+    "type": "item"
+}

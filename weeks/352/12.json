@@ -1,0 +1,7 @@
+{
+    "text": "Async/Awaitの動きについてをダイアグラムとサンプルコードで解説した記事。\nエラーハンドリング、concurrencyとparallelの違いについて",
+    "ssml": "<speak><emphasis level='moderate'>Await and Async Explained with Diagrams and Examples – Nikolay Grozev</emphasis> <break time='2000ms'/>\nAsync/Awaitの動きについてをダイアグラムとサンプルコードで解説した記事。\nエラーハンドリング、concurrencyとparallelの違いについて\n</speak>",
+    "key": "12",
+    "fileName": "12",
+    "type": "item"
+}
