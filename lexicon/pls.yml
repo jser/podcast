@@ -1,0 +1,7 @@
+lang: "jp"
+alphabet: "ipa"
+lexeme:
+  - grapheme:
+    - "Node.js"
+    - "Node"
+    alias: "ノードジェーエス"
