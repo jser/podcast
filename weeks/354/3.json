@@ -1,0 +1,7 @@
+{
+    "text": "Safari Technology Preview 42リリース。\nPayment Requestの機能実装、`font-display`の実装、`constant()`が`env()`にリネーム、`link rel=preconnect`、`import.meta`のサポート、Web InspectorにCanvasタブを追加など",
+    "ssml": "<speak><emphasis level='moderate'>Release Notes for Safari Technology Preview 42 | WebKit</emphasis> <break time='2000ms'/>\nSafari Technology Preview 42リリース。\nPayment Requestの機能実装、の実装、がにリネーム、、のサポート、Web InspectorにCanvasタブを追加など\n</speak>",
+    "key": "3",
+    "fileName": "3",
+    "type": "item"
+}

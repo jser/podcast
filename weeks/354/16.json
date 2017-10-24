@@ -1,0 +1,7 @@
+{
+    "text": "Micro Frontendsについて。\nマイクロサービスアーキテクチャ的な考えをフロントエンドの中にも適応していく話。\n機能でのチーム分割、独立したコンポーネントとWeb Components、ナビゲーションなど各トピックごとの実現方法についてを書いていくとのこと",
+    "ssml": "<speak><emphasis level='moderate'>Micro Frontends - extending the microservice idea to frontend development</emphasis> <break time='2000ms'/>\nMicro Frontendsについて。\nマイクロサービスアーキテクチャ的な考えをフロントエンドの中にも適応していく話。\n機能でのチーム分割、独立したコンポーネントとWeb Components、ナビゲーションなど各トピックごとの実現方法についてを書いていくとのこと\n</speak>",
+    "key": "16",
+    "fileName": "16",
+    "type": "item"
+}

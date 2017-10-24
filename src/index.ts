@@ -9,12 +9,12 @@ import { concatAudios } from "./concat-audio/concat-mp3";
 
 const option = {
     // dry-run : not api connect
-    dryRun: true
+    dryRun: false
 };
-const filePath = path.join(
-    __dirname,
-    "../test/create-polly-content/fixtures/2017-10-10-mocha-4.0.0-npm-2-whatwg-stream.md"
-);
+if (process.argv[2] === undefined) {
+    throw new Error("Usage: $ node index.js <path>");
+}
+const filePath = path.resolve(process.cwd(), process.argv[2]);
 const pollyContentList = createPollyContent(createArticleData(filePath));
 const directory = path.resolve(path.join(__dirname, "../weeks/" + pollyContentList.weekNumber + "/"));
 const allOutputDir = path.resolve(path.join(__dirname, "../docs/" + pollyContentList.weekNumber + "/"));

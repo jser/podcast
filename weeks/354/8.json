@@ -1,0 +1,7 @@
+{
+    "text": "Reactアプリケーションのディレクトリ構造について。\nindex.js or コンポーネント名.js、階層構造、exportするものについてなど",
+    "ssml": "<speak><emphasis level='moderate'>The 100% correct way to structure a React app (or why there’s no such thing)</emphasis> <break time='2000ms'/>\nReactアプリケーションのディレクトリ構造について。\nindex.js or コンポーネント名.js、階層構造、exportするものについてなど\n</speak>",
+    "key": "8",
+    "fileName": "8",
+    "type": "item"
+}

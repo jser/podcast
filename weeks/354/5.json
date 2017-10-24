@@ -1,0 +1,7 @@
+{
+    "text": "CKEditor 5の変更点について。\n今までのアーキテクチャを一新し、編集するテキストをデータモデルとしてもつことでContentEditable特有の出力を回避できるように。\nまたエディタ共通の問題についてを扱うEditor Recommendationsサイトの公開など",
+    "ssml": "<speak><emphasis level='moderate'>CKEditor 5: A new era for rich text editing | CKEditor.com</emphasis> <break time='2000ms'/>\nCKEditor 5の変更点について。\n今までのアーキテクチャを一新し、編集するテキストをデータモデルとしてもつことでContentEditable特有の出力を回避できるように。\nまたエディタ共通の問題についてを扱うEditor Recommendationsサイトの公開など\n</speak>",
+    "key": "5",
+    "fileName": "5",
+    "type": "item"
+}

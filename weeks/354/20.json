@@ -1,0 +1,7 @@
+{
+    "text": "Acornを使って特定のECMAScriptバージョンでパースできるかをテストするツール。\nコードが構文的にそのECMAScriptバージョンをサポートしてるかチェックできる",
+    "ssml": "<speak><emphasis level='moderate'>dollarshaveclub/es-check: Checks the version of ES in JavaScript files with simple shell commands 🏆</emphasis> <break time='2000ms'/>\nAcornを使って特定のECMAScriptバージョンでパースできるかをテストするツール。\nコードが構文的にそのECMAScriptバージョンをサポートしてるかチェックできる\n</speak>",
+    "key": "20",
+    "fileName": "20",
+    "type": "item"
+}

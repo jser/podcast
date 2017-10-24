@@ -1,0 +1,7 @@
+{
+    "text": "Chromeの使用統計データを元にしたoriginごとのRUMを集めたBigQueryのデータセット。\norigin、通信タイプ、デバイスの種類、first_paintのヒストグラムを扱うデータセット。",
+    "ssml": "<speak><emphasis level='moderate'>Chrome User Experience Report  |  Tools for Web Developers  |  Google Developers</emphasis> <break time='2000ms'/>\nChromeの使用統計データを元にしたoriginごとのRUMを集めたBigQueryのデータセット。\norigin、通信タイプ、デバイスの種類、first_paintのヒストグラムを扱うデータセット。\n</speak>",
+    "key": "17",
+    "fileName": "17",
+    "type": "item"
+}

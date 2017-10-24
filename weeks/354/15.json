@@ -1,0 +1,7 @@
+{
+    "text": "特定のURLに対するDNS LookupやTCPコネクションの時間などネットワークの接続や通信にかかった時間を計測するCLI",
+    "ssml": "<speak><emphasis level='moderate'>prantlf/nettime: Prints timings of a HTTP/S request, including DNS lookup, TLS handshake etc.</emphasis> <break time='2000ms'/>\n特定のURLに対するDNS LookupやTCPコネクションの時間などネットワークの接続や通信にかかった時間を計測するCLI\n</speak>",
+    "key": "15",
+    "fileName": "15",
+    "type": "item"
+}
