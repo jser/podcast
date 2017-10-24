@@ -99,13 +99,13 @@ export const visitorNodes = {
     listItem: toString,
     inlineCode: (node: RemarkNode, _options: markdownToSSMLOptions) => {
         return SSML(speech => {
-            speech.sayAs({ word: toString(node), interpret: "characters" });
+            speech.sayAs({ word: node.value!, interpret: "characters" });
         });
     },
     code: (node: RemarkNode, _options: markdownToSSMLOptions) => {
         return SSML(speech => {
             speech.pause("500ms");
-            speech.sayAs({ word: toString(node), interpret: "characters" });
+            speech.sayAs({ word: node.value!, interpret: "characters" });
             speech.pause("500ms");
         });
     },
