@@ -1,6 +1,6 @@
 {
     "text": "PayPalが使ってるクロスドメイン関係のライブラリまとめ。\n`postMessage`を使ったやり取り、コンポーネント、Util、同期的なPromiseであるZalgoとsetTimeoutのブロックについて、CORSとiframeについてなど",
-    "ssml": "<speak><emphasis level='moderate'>Introducing PayPal’s open-source cross-domain javascript suite</emphasis> <break time='2000ms'/>\nPayPalが使ってるクロスドメイン関係のライブラリまとめ。\nを使ったやり取り、コンポーネント、Util、同期的なPromiseであるZalgoとsetTimeoutのブロックについて、CORSとiframeについてなど\n</speak>",
+    "ssml": "<speak><emphasis level='moderate'>Introducing PayPal’s open-source cross-domain javascript suite</emphasis> <break time='2000ms'/>\nPayPalが使ってるクロスドメイン関係のライブラリまとめ。\npostMessageを使ったやり取り、コンポーネント、Util、同期的なPromiseであるZalgoとsetTimeoutのブロックについて、CORSとiframeについてなど\n</speak>",
     "key": "10",
     "fileName": "10",
     "type": "item"

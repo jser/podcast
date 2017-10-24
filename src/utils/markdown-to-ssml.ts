@@ -52,7 +52,10 @@ export const DefaultMarkdownToSSMLOptions = {
 export function markdownToSSML(content: string, options: markdownToSSMLOptions = DefaultMarkdownToSSMLOptions): string {
     const AST = remark.parse(content);
     let text = "";
-    visit(AST, "text", (node: RemarkNode, parents: RemarkNode[]) => {
+    visit(AST, (node: RemarkNode, parents: RemarkNode[]) => {
+        if (node.type !== "text" && node.type !== "code" && node.type !== "inlineCode") {
+            return;
+        }
         const result = visitor(node, parents, options);
         if (result) {
             text += result;
@@ -98,12 +101,14 @@ export const visitorNodes = {
     list: toString,
     listItem: toString,
     inlineCode: (node: RemarkNode, _options: markdownToSSMLOptions) => {
+        console.log(node);
         return SSML(speech => {
             speech.sayAs({ word: node.value!, interpret: "characters" });
         });
     },
     code: (node: RemarkNode, _options: markdownToSSMLOptions) => {
         return SSML(speech => {
+            console.log(node);
             speech.pause("500ms");
             speech.sayAs({ word: node.value!, interpret: "characters" });
             speech.pause("500ms");
