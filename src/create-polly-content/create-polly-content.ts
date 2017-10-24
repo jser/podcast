@@ -47,7 +47,7 @@ export function createPollyContent(article: PodcastArticle): PollyContentList {
         const cateryName = getCategoryName(categoryKey);
         items.push({
             text: `次は${cateryName}のコーナーです。`,
-            ssml: `<speak><p>次は<emphasis level="moderate">${cateryName}</emphasis>のコーナーです。</p></speak>`,
+            ssml: `<speak><break time='2000ms'/> <p>次は<emphasis level="moderate">${cateryName}</emphasis>のコーナーです。</p></speak>`,
             key: categoryKey,
             fileName: `${items.length}.${categoryKey}`,
             type: "decoration"

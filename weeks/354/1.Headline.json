@@ -1,6 +1,6 @@
 {
     "text": "次はヘッドラインのコーナーです。",
-    "ssml": "<speak><p>次は<emphasis level=\"moderate\">ヘッドライン</emphasis>のコーナーです。</p></speak>",
+    "ssml": "<speak><break time='2000ms'/> <p>次は<emphasis level=\"moderate\">ヘッドライン</emphasis>のコーナーです。</p></speak>",
     "key": "Headline",
     "fileName": "1.Headline",
     "type": "decoration"
